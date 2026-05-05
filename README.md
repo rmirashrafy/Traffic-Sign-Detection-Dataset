@@ -4,7 +4,7 @@
 
 <img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
 
----
+
 
 ## 📊 Dataset Information
 
@@ -22,7 +22,7 @@ In addition to traffic signs, the dataset includes:
 
 Some images contain **multiple objects and labels** on a physically simulated road environment.
 
----
+
 
 ### Dataset Details
 
@@ -30,7 +30,7 @@ Some images contain **multiple objects and labels** on a physically simulated ro
 * **Annotation Format:** YOLO (bounding boxes)
 * **Number of Classes:** 14
 
----
+
 
 ### Dataset Structure
 
@@ -43,7 +43,7 @@ dataset/
 data.yaml
 ```
 
----
+
 
 ### Installation
 
@@ -52,7 +52,7 @@ pip install ultralytics
 pip install roboflow
 ```
 
----
+
 
 ### Roboflow Project
 
@@ -60,7 +60,7 @@ pip install roboflow
 https://app.roboflow.com/yolo-self-driving-car
 ```
 
----
+
 
 ### Use Cases
 
@@ -75,15 +75,15 @@ https://app.roboflow.com/yolo-self-driving-car
 
 We trained a **simple object detection model** on this dataset using Roboflow.
 
----
+
 
 ### Model Details
 
-* **Model URL:** `crosswalk-sign-recognition/4`
-* **Checkpoint:** COCO
-* **Model Type:** Roboflow 3.0 Object Detection (Fast)
+* Model URL: `crosswalk-sign-recognition/4`
+* Checkpoint: COCO
+* Model Type: Roboflow 3.0 Object Detection (Fast)
 
----
+
 
 ### Performance (mAP@50)
 
@@ -105,7 +105,7 @@ We trained a **simple object detection model** on this dataset using Roboflow.
 | red             | 81.0%          |
 | uphill          | (not reported) |
 
-* **Overall mAP@50:** **78.0%**
+* Overall mAP@50: **78.0%**
 
 ---
 
