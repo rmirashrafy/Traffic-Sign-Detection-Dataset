@@ -1,8 +1,4 @@
-Got it — here is a clean, simple, professional README in English:
 
----
-
-```markdown
 # Traffic Sign Dataset (Turn-Left & Crosswalk)
 
 ## Overview
@@ -37,7 +33,7 @@ The dataset was tested using Roboflow 3.0 Object Detection model:
 
 ## Dataset Structure
 
-```
+
 
 dataset/
 ├── train/       # Images and labels
@@ -47,7 +43,7 @@ dataset/
 data.yaml        # YOLO configuration file
 README.md
 
-```
+
 
 ## Usage (YOLOv8 Example)
 
@@ -97,12 +93,3 @@ computer-vision, object-detection, dataset, yolo, autonomous-vehicles, deep-lear
 - Autonomous driving systems  
 - Traffic monitoring  
 - Pedestrian detection  
-
-## Contributions
-
-Contributions and improvements are welcome.
-```
-
----
-
-If you want, I can make a slightly stronger version for job applications or Upwork (more impact-focused, less academic).
