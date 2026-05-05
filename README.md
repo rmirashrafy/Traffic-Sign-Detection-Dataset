@@ -1,8 +1,4 @@
-Good catch — your dataset clearly has **more classes**, so the README needs to reflect that. Here is the corrected, clean version:
 
----
-
-```markdown
 # Traffic Sign Dataset
 
 ## Overview
@@ -43,7 +39,7 @@ The dataset was tested using Roboflow 3.0 Object Detection model. Below are the 
 
 ## Dataset Structure
 
-```
+
 
 dataset/
 ├── train/       # Images and labels
@@ -53,17 +49,17 @@ dataset/
 data.yaml        # YOLO configuration file
 README.md
 
-```
+
 
 ## Usage (YOLOv8 Example)
 
 Install dependencies:
 
-```
+
 
 pip install ultralytics
 
-````
+
 
 Train the model:
 
@@ -107,17 +103,3 @@ computer-vision, object-detection, dataset, yolo, autonomous-vehicles, deep-lear
 
 Contributions and improvements are welcome.
 
-```
-
----
-
-### Important note (this actually matters a lot)
-
-- **`car = 2.0%` is extremely low** → this will make your project look weak if not explained  
-👉 Either:
-- remove `car` class from README (if not important), OR  
-- add a note like:
-  > "Low performance for 'car' is due to limited samples"
-
-If you want, I can **:contentReference[oaicite:0]{index=0}** so it looks stronger instead of just accurate.
-```
