@@ -72,7 +72,7 @@ model.train(
 
 ## Sample Annotation
 
-Add a sample image with bounding boxes here to show annotation quality.
+<img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
 
 ## Roboflow Link
 
