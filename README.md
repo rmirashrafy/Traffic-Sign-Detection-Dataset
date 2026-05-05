@@ -43,6 +43,9 @@ The dataset was tested using the Roboflow 3.0 Object Detection model. Below are 
 
 * **Overall mAP@50:** 78.0%
 
+<img width="1399" height="805" alt="Screenshot from 2026-05-05 22-44-12" src="https://github.com/user-attachments/assets/c540224d-ae2a-4120-ac10-d9a70024104c" />
+
+
 ## Dataset Structure
 
 ```
@@ -54,7 +57,6 @@ dataset/
 data.yaml
 ```
 
-## Usage (YOLOv8 Example)
 
 Install dependencies:
 
