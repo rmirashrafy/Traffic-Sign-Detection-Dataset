@@ -17,7 +17,6 @@ The images were carefully selected and curated from a pool of approximately **35
 In addition to traffic signs, the dataset includes:
 
 * Dolls representing humans
-* Real humans
 * Cars
 * Orange cone obstacles
 
