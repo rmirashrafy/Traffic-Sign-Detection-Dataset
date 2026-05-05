@@ -1,5 +1,7 @@
 # Traffic Sign Dataset
 
+<img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
+
 ## Overview
 
 This dataset is designed for object detection tasks and includes 14 specific signs used in RoboCup and FiraCup autonomous car competitions. The images have been carefully selected and collected from a total of 35,000 pictures, focusing only on the necessary signs defined in the competition. In addition, the dataset includes dolls representing humans, real humans, cars, and orange cone obstacles on a physically simulated road. Some images contain more than one sign or label.
@@ -69,10 +71,6 @@ model.train(
     imgsz=640
 )
 ```
-
-## Sample Annotation
-
-<img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
 
 ## Roboflow Link
 
