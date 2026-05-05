@@ -6,7 +6,7 @@
 
 
 
-## 📊 Dataset Information
+## Dataset Information
 
 ### Overview
 
@@ -71,7 +71,7 @@ https://app.roboflow.com/yolo-self-driving-car
 
 ---
 
-## 🤖 Trained Model (Test Model) Information
+## Trained Model (Test Model) Information
 
 We trained a **simple object detection model** on this dataset using Roboflow.
 
@@ -107,6 +107,6 @@ We trained a **simple object detection model** on this dataset using Roboflow.
 
 * Overall mAP@50: **78.0%**
 
----
+
 
 <img width="1399" height="805" alt="Screenshot from 2026-05-05 22-44-12" src="https://github.com/user-attachments/assets/c540224d-ae2a-4120-ac10-d9a70024104c" />
