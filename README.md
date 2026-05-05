@@ -1,11 +1,3 @@
-
-add this part in the right section: !pip install roboflow 
- 
-from roboflow import Roboflow 
-rf = Roboflow(api_key="W3vIGAiYiPwAKd8Yhn1b") 
-project = rf.workspace("yolo-self-driving-car").project("crosswalk-sign-recognition") 
-version = project.version(3) 
-dataset = version.download("yolov8")
 # Traffic Sign Dataset
 
 <img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
