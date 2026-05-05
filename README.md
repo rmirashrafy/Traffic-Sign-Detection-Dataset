@@ -63,24 +63,6 @@ pip install ultralytics
 pip install roboflow
 ```
 
-Train the model:
-
-```python
-from ultralytics import YOLO
-
-model = YOLO("yolov8n.pt")
-
-model.train(
-    data="data.yaml",
-    epochs=50,
-    imgsz=640
-)
-
-from roboflow import Roboflow
-rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace("workspace-name").project("project-name")
-dataset = project.version(1).download("yolov8")
-```
 
 ## Roboflow Link
 
