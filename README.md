@@ -1,132 +1,108 @@
-خیلی خوبه، دیتاستت پتانسیل داره حرفه‌ای دیده بشه—فقط README باید ساختارمندتر و شفاف‌تر بشه. من یه نسخه تمیز، استاندارد و قابل استفاده مستقیم برات نوشتم 👇
+Got it — here is a clean, simple, professional README in English:
 
 ---
 
-## 📄 README پیشنهادی
-
 ```markdown
-# 🚗 Traffic Sign Dataset (Turn-Left & Crosswalk)
+# Traffic Sign Dataset (Turn-Left & Crosswalk)
 
-This dataset is designed for object detection tasks in autonomous driving and computer vision applications. It focuses on two important road scenarios:
+## Overview
 
-- Turn-Left signs
-- Crosswalks
+This dataset is designed for object detection tasks in computer vision, especially for autonomous driving applications. It focuses on two common road elements:
 
-## 📸 Dataset Overview
+- Turn-Left signs  
+- Crosswalks  
 
-- Source: Real-world road scenarios
-- Conditions: Various lighting and weather conditions
-- Total Images: ~2000
-- Annotation Format: YOLO (bounding boxes)
+The data is collected from real-world road environments under different lighting and weather conditions.
 
-## 🎯 Classes
+## Dataset Information
 
-| Class Name  | Description |
-|------------|------------|
-| Turn-Left  | Traffic signs indicating left turns |
-| Crosswalk  | Pedestrian crossing areas |
+- Total Images: ~2000  
+- Annotation Format: YOLO (bounding boxes)  
+- Classes: 2  
 
-## 🚀 Model Performance
+### Classes
 
-This dataset was tested using Roboflow 3.0 Object Detection model:
+| Class Name | Description |
+|-----------|------------|
+| Turn-Left | Traffic signs indicating left turns |
+| Crosswalk | Pedestrian crossing areas |
 
-- **mAP@50:** 78.1%  
-- **Precision:** 76.8%  
-- **Recall:** 71.4%  
+## Model Performance
 
-## 📂 Dataset Structure
+The dataset was tested using Roboflow 3.0 Object Detection model:
+
+- mAP@50: 78.1%  
+- Precision: 76.8%  
+- Recall: 71.4%  
+
+## Dataset Structure
 
 ```
 
 dataset/
-├── train/       # Images & Labels
+├── train/       # Images and labels
 ├── valid/       # Validation set
 └── test/        # Test set
 
 data.yaml        # YOLO configuration file
 README.md
 
-````
+```
 
-## 🧠 Usage (YOLOv8 Example)
+## Usage (YOLOv8 Example)
 
-```bash
+Install dependencies:
+
+```
+
 pip install ultralytics
-````
 
-```python
+```
+
+Train the model:
+
+```
+
 from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")
 
 model.train(
-    data="data.yaml",
-    epochs=50,
-    imgsz=640
+data="data.yaml",
+epochs=50,
+imgsz=640
 )
+
 ```
 
-## 🖼️ Sample Annotation
+## Sample Annotation
 
-(Add a sample image with bounding boxes here)
+Add a sample image with bounding boxes here to show annotation quality.
 
-## 🔗 Roboflow Dataset
+## Roboflow Link
 
-(Add your Roboflow Universe link here)
+Add your Roboflow dataset link here.
 
-## 📜 License
+## License
 
-This dataset is licensed under the AGPL-3.0 License.
-Please ensure compliance with the license terms when using or distributing this dataset.
+This dataset is licensed under the AGPL-3.0 License.  
+Make sure to follow the license terms when using or sharing this dataset.
 
-## 🏷️ Tags
+## Tags
 
 computer-vision, object-detection, dataset, yolo, autonomous-vehicles, deep-learning, traffic-signs
 
-## 🤝 Contributions
+## Use Cases
 
-Contributions, improvements, and feedback are welcome!
+- Autonomous driving systems  
+- Traffic monitoring  
+- Pedestrian detection  
 
-````
+## Contributions
 
----
-
-## 💡 چند تا بهبود حرفه‌ای که واقعاً تاثیر داره:
-
-**1. اگر بتونی اینو اضافه کنی، سطح پروژه میره بالا:**
-- تعداد دقیق هر کلاس (مثلاً: 1200 crosswalk / 800 turn-left)
-- Distribution (train/val/test split درصدی)
-
-**2. اگر YOLOv8 واقعاً train کردی:**
-- confusion matrix اسکرین‌شات
-- loss curve
-- inference sample
-
-**3. خیلی مهم برای GitHub:**
-یک عکس این شکلی اضافه کن:
-- تصویر واقعی + bounding box
-👉 این باعث میشه recruiter تو ۳ ثانیه بفهمه کارت چقدر تمیزه
-
-**4. اگر خواستی خفن‌ترش کنی:**
-بخش اضافه کن:
-```markdown
-## 📊 Potential Use Cases
-- Autonomous driving systems
-- Smart traffic monitoring
-- Pedestrian safety detection
-````
+Contributions and improvements are welcome.
+```
 
 ---
 
-## ❓ سوال مهم (برای بهترش کردن README)
-
-آیا این کارها رو هم انجام دادی یا نه؟
-
-* مدل YOLOv8 رو خودت train کردی؟
-* یا فقط از Roboflow استفاده کردی؟
-
-اگر YOLOv8 train کردی، من میتونم:
-👉 یه بخش **Results خیلی حرفه‌ای (مثل paper)** برات بنویسم
-👉 حتی متن مناسب برای اپلای/Upwork هم دربیارم ازش
-
-فقط بگو 👌
+If you want, I can make a slightly stronger version for job applications or Upwork (more impact-focused, less academic).
