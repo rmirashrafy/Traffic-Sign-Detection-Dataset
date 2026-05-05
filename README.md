@@ -1,3 +1,4 @@
+
 # Traffic Sign Dataset
 
 <img width="1043" height="533" alt="Screenshot from 2026-05-05 18-22-41" src="https://github.com/user-attachments/assets/d5ce84dd-3e12-4ebf-ab9c-d6b693d43498" />
@@ -5,6 +6,12 @@
 ## Overview
 
 This dataset is designed for object detection tasks and includes 14 specific signs used in RoboCup and FiraCup autonomous car competitions. The images have been carefully selected and collected from a total of 35,000 pictures, focusing only on the necessary signs defined in the competition. In addition, the dataset includes dolls representing humans, real humans, cars, and orange cone obstacles on a physically simulated road. Some images contain more than one sign or label.
+
+## Model Information
+
+* **Model URL:** `crosswalk-sign-recognition/4`
+* **Checkpoint:** COCO
+* **Model Type:** Roboflow 3.0 Object Detection (Fast)
 
 ## Dataset Information
 
@@ -34,8 +41,7 @@ The dataset was tested using the Roboflow 3.0 Object Detection model. Below are 
 | red             | 81.0%          |
 | uphill          | (not reported) |
 
-
-* mAP@50: 78.0%
+* **Overall mAP@50:** 78.0%
 
 ## Dataset Structure
 
@@ -45,8 +51,7 @@ dataset/
 ├── valid/       # Validation set
 └── test/        # Test set
 
-data.yaml        
-
+data.yaml
 ```
 
 ## Usage (YOLOv8 Example)
@@ -55,6 +60,7 @@ Install dependencies:
 
 ```
 pip install ultralytics
+pip install roboflow
 ```
 
 Train the model:
@@ -69,6 +75,11 @@ model.train(
     epochs=50,
     imgsz=640
 )
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="YOUR_API_KEY")
+project = rf.workspace("workspace-name").project("project-name")
+dataset = project.version(1).download("yolov8")
 ```
 
 ## Roboflow Link
@@ -83,4 +94,3 @@ https://app.roboflow.com/yolo-self-driving-car
 * Traffic sign recognition
 * Smart traffic monitoring
 * Pedestrian and signal detection
-
