@@ -34,7 +34,6 @@ The dataset was tested using the Roboflow 3.0 Object Detection model. Below are 
 | red             | 81.0%          |
 | uphill          | (not reported) |
 
-## Model Performance (Overall)
 
 * mAP@50: 78.0%
 
@@ -46,8 +45,8 @@ dataset/
 ├── valid/       # Validation set
 └── test/        # Test set
 
-data.yaml        # YOLO configuration file
-README.md
+data.yaml        
+
 ```
 
 ## Usage (YOLOv8 Example)
